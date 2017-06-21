@@ -11,10 +11,7 @@ var chatChatChat = (function(oldChatChatChat) {
 	    myRequest.send();
 	}
 
-    oldChatChatChat.loadMessages = function(){
-    	console.log(messages);
-    	return messages;
-    }
+
    
     return oldChatChatChat;
 
