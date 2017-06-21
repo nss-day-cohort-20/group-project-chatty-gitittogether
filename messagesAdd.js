@@ -1,4 +1,4 @@
-// var chatChatChat = (function(oldChatChat){
-// 	console.log(fiveMessages);
+var chatChatChat = (function(oldChatChat){
+	
 
-// }(chatChatChat|| {}));
+}(chatChatChat|| {}));
