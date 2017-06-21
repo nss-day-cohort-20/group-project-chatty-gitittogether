@@ -1,18 +1,18 @@
-{  
-  "messages":[  
-    {  
+{
+  "messages":[
+    {
       "msg":"message1"
     },
-    {  
+    {
       "msg":"message2"
     },
-    {  
+    {
       "msg":"message3"
     },
-    {  
+    {
       "msg":"message4"
     },
-    {  
+    {
       "msg":"message5"
     }
   ]
