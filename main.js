@@ -1,0 +1,1 @@
+let myRequest = new XMLHttpRequest();
