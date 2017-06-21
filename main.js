@@ -9,3 +9,11 @@ document.getElementById("dark-theme").addEventListener("click", function(){
 document.getElementById("large-text").addEventListener("click", function(){
 	checkboxes.classList.toggle("large-text");
 });
+
+
+
+chatChatChat.loadInitialMessages(chatChatChat.loadMessages);
+
+   
+
+console.log(message)         
