@@ -1,7 +1,6 @@
 * {
   font-family: 'Ropa Sans', sans-serif;
 }
-
 .inline {
   margin-left: 12em;
   display: inline-flex;
@@ -20,21 +19,16 @@
   height: 36px;
   border-radius: 4px;
 }
-
 .checkbox {
-
   display: flex;
 }
-
 .logo {
   font-family: 'Lobster', cursive;
 }
-
 .dark-theme {
 	background-color: slategray;
 	color: white;
 }
-
 .large-text {
 	font-size: 3em;
 }

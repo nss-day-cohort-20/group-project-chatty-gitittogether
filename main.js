@@ -14,7 +14,7 @@ let loadMessages = function(msg){
 
 chatChatChat.loadInitialMessages(loadMessages);
 
-   
 
-        
+
+
 
