@@ -32,3 +32,8 @@
 .large-text {
 	font-size: 3em;
 }
+
+#message-output {
+  border: 2px solid black;
+}
+
