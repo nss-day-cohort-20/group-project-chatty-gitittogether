@@ -24,6 +24,7 @@ clearBtn.setAttribute("disabled", "disabled");
 
 // });
 
+
 // ****************************JS & MB********************************
 let messagesHub = function(messagesArr) {
 	chatChatChat.addInitialMessages(messagesArr);
