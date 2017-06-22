@@ -12,13 +12,13 @@ document.getElementById("large-text").addEventListener("click", function(){
 	checkboxes.classList.toggle("large-text");
 });
 
-let loadMessages = function(msg){
+let messagesHub = function(msg){
     console.log(msg);
 }
 
-chatChatChat.loadInitialMessages(loadMessages);
+chatChatChat.loadInitialMessages(MessagesHub);
 
-   
 
-        
+
+
 

@@ -5,14 +5,12 @@ var chatChatChat = (function(oldChatChatChat) {
 	    let myRequest = new XMLHttpRequest();
 	    myRequest.addEventListener("load", function(){
 	    	messages = JSON.parse(event.target.responseText);
-	    	callBack(messages)	
+	    	callBack(messages)
 	    });
 	    myRequest.open("GET", "messages.json");
 	    myRequest.send();
-	}
+		}
 
-
-   
     return oldChatChatChat;
 
 }(chatChatChat || {}));

@@ -1,4 +1,18 @@
-var chatChatChat = (function(oldChatChat){
-	
+// var chatChatChat = (function(oldChatChatChat){
 
-}(chatChatChat|| {}));
+// 	let allMessagesArr = [];
+
+
+// 	// oldChatChatChat.getOldMessages = function() {
+
+// 	// }
+// 	// oldChatChatChat.storeMessage = function() {
+
+// 	// }
+
+
+
+
+
+
+// }(chatChatChat|| {}));
