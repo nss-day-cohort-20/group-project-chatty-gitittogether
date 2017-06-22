@@ -1,16 +1,16 @@
-let checkboxes = document.getElementById("chatBody");
+// let checkboxes = document.getElementById("chatBody");
 var darkTheme = document.getElementById("dark-theme");
 var largeText =  document.getElementById("large-text");
 var clearBtn = document.getElementById("clear-btn");
-
+let outputMessageArea = document.getElementById("message-output")
 
 
 darkTheme.addEventListener("click", function() {
-  checkboxes.classList.toggle("dark-theme");
+  outputMessageArea.classList.toggle("dark-theme");
 });
 
 largeText.addEventListener("click", function() {
-  checkboxes.classList.toggle("large-text");
+  outputMessageArea.classList.toggle("large-text");
 });
 
 
@@ -32,9 +32,7 @@ let messagesHub = function(messagesArr) {
 }
 
 let messagesAddToDOM = function() {
-	let outputMessageArea = document.getElementById("message-output");
 	allmessages = chatChatChat.getMessages();
-
 
 	allmessages = allmessages.map(function(currentMessage){
 		let messageHolder = document.createElement("div");
@@ -54,6 +52,17 @@ let messagesAddToDOM = function() {
 	})
 }	
 
+	let userInput = document.getElementById("message-input");
+	
+    userInput.addEventListener("keypress", function(event) {
+        // invokes function to take any keypress to submit the user input to the DOM.
+        if (event.key === "Enter") {
+        	let inputText = userInput.value;
+        	chatChatChat.addNewMsgToArr(inputText);
+        }
+    });
+
+console.log(chatChatChat)
 chatChatChat.loadInitialMessages(messagesHub);
 
 
