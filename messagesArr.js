@@ -11,6 +11,7 @@ var chatChatChat = (function(oldChatChatChat) {
 	    myRequest.send();
 		}
 
+
     return oldChatChatChat;
 
 }(chatChatChat || {}));
