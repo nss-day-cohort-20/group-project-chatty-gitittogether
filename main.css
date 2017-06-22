@@ -18,17 +18,44 @@
   width: 181px;
   height: 36px;
   border-radius: 4px;
+  border: 1px solid black;
+  background-color: gray;
+  color: #ffffff;
+  padding: 5px 10px;
 }
+
+#clear-btn:hover {
+  border: 1px solid black;
+  background-color: slategray;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+#clear-btn:disabled,
+#clear-btn[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 .checkbox {
   display: flex;
 }
+
 .logo {
   font-family: 'Lobster', cursive;
 }
+
 .dark-theme {
 	background-color: slategray;
 	color: white;
 }
+
 .large-text {
 	font-size: 3em;
 }
+
+#message-output {
+  border: 2px solid black;
+}
+

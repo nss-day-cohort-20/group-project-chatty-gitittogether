@@ -1,14 +1,32 @@
 let checkboxes = document.getElementById("chatBody");
+var darkTheme = document.getElementById("dark-theme");
+var largeText =  document.getElementById("large-text");
+var clearBtn = document.getElementById("clear-btn");
 
-document.getElementById("dark-theme").addEventListener("click", function() {
+
+
+darkTheme.addEventListener("click", function() {
   checkboxes.classList.toggle("dark-theme");
 });
 
-document.getElementById("large-text").addEventListener("click", function() {
+largeText.addEventListener("click", function() {
   checkboxes.classList.toggle("large-text");
 });
 
-let messagesHub = function(messagesArr) {
+
+clearBtn.addEventListener("click", function(){
+	clearBtn.classList.toggle("clear-btn");
+})
+
+clearBtn.setAttribute("disabled", "disabled");
+// clearBtn.removeAttribute("disabled");
+// enableBtn.addEventListener("click", function(){
+
+// });
+
+
+
+et messagesHub = function(messagesArr) {
   // console.log(messagesArr);
   chatChatChat.addInitialMessages(messagesArr);
 }
