@@ -11,8 +11,6 @@ var chatChatChat = (function(oldChatChatChat) {
 		return allMessagesArr;
 	}
 
-
-
 	return oldChatChatChat;
 
 

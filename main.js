@@ -26,7 +26,7 @@ clearBtn.setAttribute("disabled", "disabled");
 
 
 
-et messagesHub = function(messagesArr) {
+let messagesHub = function(messagesArr) {
   // console.log(messagesArr);
   chatChatChat.addInitialMessages(messagesArr);
 }
