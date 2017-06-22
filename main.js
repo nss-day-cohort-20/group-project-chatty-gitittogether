@@ -8,11 +8,14 @@ document.getElementById("large-text").addEventListener("click", function() {
   checkboxes.classList.toggle("large-text");
 });
 
-let messagesHub = function(msg){
-    // console.log(msg);
-    chatChatChat.addInitialJson(msg);
+let messagesHub = function(messagesArr) {
+  // console.log(messagesArr);
+  chatChatChat.addInitialMessages(messagesArr);
 }
 
+let messagesAddToDOM = function() {
+
+}
 
 
 chatChatChat.loadInitialMessages(messagesHub);
