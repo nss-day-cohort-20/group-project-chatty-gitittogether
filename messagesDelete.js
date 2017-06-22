@@ -4,7 +4,7 @@ var chatChatChat = (function(oldChatChatChat) {
         // invokes function to take any keypress to submit the user input to the DOM.
         if (event.key === "Enter") {
             // userInput.push(allMessagesArr);
-            
+
             oldChatChatChat.getMessages.push(userInput.value);
             console.log(userInput.value);
         }
@@ -17,6 +17,6 @@ var chatChatChat = (function(oldChatChatChat) {
     // });
 
 
-
+    return oldChatChatChat;
 
 }(chatChatChat || {}));
