@@ -8,10 +8,6 @@ document.getElementById("large-text").addEventListener("click", function() {
   checkboxes.classList.toggle("large-text");
 });
 
-document.getElementById("large-text").addEventListener("click", function(){
-	checkboxes.classList.toggle("large-text");
-});
-
 let loadMessages = function(msg){
     console.log(msg);
 }
