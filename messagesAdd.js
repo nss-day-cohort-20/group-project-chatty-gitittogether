@@ -1,10 +1,17 @@
-var chatChatChat = (function(oldChatChatChat){
+var chatChatChat = (function(oldChatChatChat) {
 	let allMessagesArr = [];
+	let outputArea = document.getElementById("message-output");
 
-	oldChatChatChat.addInitialJson = function(json){
-		allMessagesArr = json;
+	oldChatChatChat.addInitialMessages = function(messagesArr) {
+		allMessagesArr = messagesArr;
 		console.log(allMessagesArr);
 	}
+
+	oldChatChatChat.getMessages = function() {
+		return allMessagesArr;
+	}
+
+
 
 	return oldChatChatChat;
 
