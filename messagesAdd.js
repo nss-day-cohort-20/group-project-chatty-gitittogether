@@ -4,11 +4,11 @@ var chatChatChat = (function(oldChatChatChat) {
 
 	oldChatChatChat.addInitialMessages = function(messagesArr) {
 		allMessagesArr = messagesArr;
-		console.log(allMessagesArr);
 	}
 
 	oldChatChatChat.getMessages = function() {
 		return allMessagesArr;
+	
 	}
 
 	return oldChatChatChat;
