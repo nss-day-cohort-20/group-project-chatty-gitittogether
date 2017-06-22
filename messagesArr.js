@@ -10,8 +10,7 @@ var chatChatChat = (function(oldChatChatChat) {
     myRequest.open("GET", "messages.json");
     myRequest.send();
 	}
-
-
+	
   return oldChatChatChat;
 
 }(chatChatChat || {}));

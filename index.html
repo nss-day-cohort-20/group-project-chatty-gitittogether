@@ -8,21 +8,23 @@
   </head>
 
   <body>
-      <div class="inline">
+    <div id= "container">
+
+      <div class="nav">
           <h1 class="logo">ChatChatChat</h1>
           <input id="message-input" type="text" placeholder="Enter Message" >
           <input id="clear-btn" type="button" value="Clear Messages">
-      </div>
-      <div id="chatBody" class="checkbox">   
           <input id="dark-theme" name="Dark Theme" type="checkbox">Dark Theme
           <input id="large-text" name="Large Text" type="checkbox">Large Text
+          <h5>Messages:</h5>
       </div>
-        <div id="message-output">
-          
-        </div>
+      
+      <div id="message-output"></div>
+
       <script src="messagesArr.js"></script>
       <script src="messagesAdd.js"></script>
       <script src="messagesDelete.js"></script>
       <script src="main.js"></script>
+    </div>
   </body>
 </html>
