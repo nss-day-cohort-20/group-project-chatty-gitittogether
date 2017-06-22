@@ -14,11 +14,14 @@ largeText.addEventListener("click", function() {
 });
 
 
-clearBtn.addEventListener("click", function(){
-	clearBtn.classList.toggle("clear-btn");
-})
+// clearBtn.addEventListener("click", function(){
+// 	if (outputMessageArea.contains(messageHolder)) {
+// 		clearBtn.setAttribute("disabled", "disabled");
+// 		}
+// 	clearBtn.classList.toggle("clear-btn");
+// })
 
-clearBtn.setAttribute("disabled", "disabled");
+
 // clearBtn.removeAttribute("disabled");
 // enableBtn.addEventListener("click", function(){
 
@@ -49,6 +52,10 @@ let messagesAddToDOM = function() {
 		deleteBtn.addEventListener("click", function(){
 			outputMessageArea.removeChild(messageHolder)
 		})
+		clearBtn.addEventListener("click", function(){
+		outputMessageArea.removeChild(messageHolder)
+		console.log("buttonworks");
+		})
 	})
 }	
 
@@ -59,8 +66,9 @@ let messagesAddToDOM = function() {
         if (event.key === "Enter") {
         	let inputText = userInput.value;
         	chatChatChat.addNewMsgToArr(inputText);
-        }
+        } 
     });
+
 
 console.log(chatChatChat)
 chatChatChat.loadInitialMessages(messagesHub);
