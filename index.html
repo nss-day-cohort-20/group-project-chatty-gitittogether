@@ -8,18 +8,17 @@
   </head>
 
   <body>
-    <div id= "container">
-
-      <div class="nav">
+      <nav>
           <h1 class="logo">ChatChatChat</h1>
           <input id="message-input" type="text" placeholder="Enter Message" >
-          <!-- <input id="clear-btn" class="disable" type="button" value="Clear Messages"> -->
           <button id="clear-btn">Clear</button>
-          <input id="dark-theme" name="Dark Theme" type="checkbox">Dark Theme
-          <input id="large-text" name="Large Text" type="checkbox">Large Text
-          <h5>Messages:</h5>
-      </div>
-      
+          <div id="checkboxes">
+            <input id="dark-theme" name="Dark Theme" type="checkbox">Dark Theme
+            <input id="large-text" name="Large Text" type="checkbox">Large Text
+          </div>
+      </nav>
+      <div id="ghost-nav"></div>
+      <h3>Messages:</h3>
       <div id="message-output"></div>
 
       <script src="messagesArr.js"></script>
