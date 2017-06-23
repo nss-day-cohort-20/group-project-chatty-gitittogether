@@ -53,7 +53,11 @@ let messagesAddToDOM = function() {
 			outputMessageArea.removeChild(messageHolder)
 		})
 		clearBtn.addEventListener("click", function(){
-		outputMessageArea.removeChild(messageHolder)
+			if (outputMessageArea.contains(messageHolder)){
+				outputMessageArea.removeChild(messageHolder)
+			}else{
+				clearBtn.setAttribute("disabled", "disabled");
+			}
 		console.log("buttonworks");
 		})
 	})
