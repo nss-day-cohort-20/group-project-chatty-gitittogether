@@ -60,7 +60,7 @@ let messagesAddToDOM = function() {
 		let deleteBtn = document.createElement("button");
 		deleteBtn.setAttribute("class", "removeMessage");
 		deleteBtn.innerHTML = "Delete";
-
+});
 
 let userInput = document.getElementById("message-input");
 
