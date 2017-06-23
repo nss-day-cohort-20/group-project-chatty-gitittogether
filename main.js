@@ -42,7 +42,7 @@ let messagesAddToDOM = function() {
 		messageHolder.setAttribute("class", "eachMessage");
 		messageHolder.innerHTML = currentMessage.msg;
 		outputMessageArea.appendChild(messageHolder)
-	
+
 		let deleteBtn = document.createElement("button");
 		deleteBtn.setAttribute("class", "removeMessage");
 		deleteBtn.innerHTML = "Delete";
@@ -57,16 +57,16 @@ let messagesAddToDOM = function() {
 		console.log("buttonworks");
 		})
 	})
-}	
+}
 
 	let userInput = document.getElementById("message-input");
-	
+
     userInput.addEventListener("keypress", function(event) {
         // invokes function to take any keypress to submit the user input to the DOM.
         if (event.key === "Enter") {
         	let inputText = userInput.value;
         	chatChatChat.addNewMsgToArr(inputText);
-        } 
+        }
     });
 
 
