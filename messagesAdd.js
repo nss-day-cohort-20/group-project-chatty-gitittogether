@@ -27,7 +27,7 @@ var chatChatChat = (function(oldChatChatChat) {
 		deleteBtn.addEventListener("click", function(){
 			outputArea.removeChild(addNewMsg)
 		})
-		
+
 		clearBtn.addEventListener("click", function(){
 		outputArea.removeChild(addNewMsg)
 		console.log("buttonworks");
