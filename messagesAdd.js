@@ -6,7 +6,7 @@ var chatChatChat = (function(oldChatChatChat) {
 	oldChatChatChat.addInitialMessages = function(messagesArr) {
 		allMessagesArr = messagesArr;
 	}
-
+    // var new_object = allMessagesArr;
 	oldChatChatChat.getMessages = function() {
 		return allMessagesArr;
 	}
