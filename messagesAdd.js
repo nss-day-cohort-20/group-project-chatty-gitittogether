@@ -1,6 +1,7 @@
 var chatChatChat = (function(oldChatChatChat) {
 	let allMessagesArr = [];
 	let outputArea = document.getElementById("message-output");
+	var clearBtn = document.getElementById("clear-btn");
 
 	oldChatChatChat.addInitialMessages = function(messagesArr) {
 		allMessagesArr = messagesArr;
@@ -29,7 +30,11 @@ var chatChatChat = (function(oldChatChatChat) {
 		})
 
 		clearBtn.addEventListener("click", function(){
-		outputArea.removeChild(addNewMsg)
+			if (outputArea.contains(addNewMsg)){
+				outputArea.removeChild(addNewMsg)
+			}else{
+				clearBtn.setAttribute("disabled", "disabled");
+			}
 		console.log("buttonworks");
 		})
 	}
