@@ -77,7 +77,7 @@ userInput.addEventListener("keypress", function(event) {
         chatChatChat.addNewMsgToArr(inputText);
         clearTextBox(inputText);
     }
-});
+}); 
 
 console.log(chatChatChat)
 chatChatChat.loadInitialMessages(messagesHub);
