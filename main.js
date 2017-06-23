@@ -6,27 +6,12 @@ let outputMessageArea = document.getElementById("message-output")
 
 
 darkTheme.addEventListener("click", function() {
-    outputMessageArea.classList.toggle("dark-theme");
+  outputMessageArea.classList.toggle("dark-theme");
 });
 
 largeText.addEventListener("click", function() {
-    outputMessageArea.classList.toggle("large-text");
+  outputMessageArea.classList.toggle("large-text");
 });
-
-
-// clearBtn.addEventListener("click", function(){
-//  if (outputMessageArea.contains(messageHolder)) {
-//    clearBtn.setAttribute("disabled", "disabled");
-//    }
-//  clearBtn.classList.toggle("clear-btn");
-// })
-
-
-// clearBtn.removeAttribute("disabled");
-// enableBtn.addEventListener("click", function(){
-
-// });
-
 
 // ****************************JS & MB********************************
 let messagesHub = function(messagesArr) {
@@ -35,6 +20,7 @@ let messagesHub = function(messagesArr) {
 }
 
 let messagesAddToDOM = function() {
+
     allmessages = chatChatChat.getMessages();
 
     allmessages = allmessages.map(function(currentMessage) {
@@ -63,6 +49,19 @@ let messagesAddToDOM = function() {
     })
 }
 
+	allmessages = chatChatChat.getMessages();
+
+	allmessages = allmessages.map(function(currentMessage){
+		let messageHolder = document.createElement("div");
+		messageHolder.setAttribute("class", "eachMessage");
+		messageHolder.innerHTML = currentMessage.msg;
+		outputMessageArea.appendChild(messageHolder)
+
+		let deleteBtn = document.createElement("button");
+		deleteBtn.setAttribute("class", "removeMessage");
+		deleteBtn.innerHTML = "Delete";
+
+
 let userInput = document.getElementById("message-input");
 
 function clearTextBox(event, inputText) {
@@ -79,9 +78,6 @@ userInput.addEventListener("keypress", function(event) {
         clearTextBox(inputText);
     }
 });
-
-
-
 
 console.log(chatChatChat)
 chatChatChat.loadInitialMessages(messagesHub);

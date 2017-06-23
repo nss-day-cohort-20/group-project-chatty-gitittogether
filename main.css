@@ -1,12 +1,96 @@
 * {
+  margin: 0;
+}
+h2, h3, h4, h5, h6, p, a, button, input {
   font-family: 'Ropa Sans', sans-serif;
+  margin: 0;
 }
-.inline {
-  margin-left: 12em;
-  display: inline-flex;
-  flex-direction: row;
-  align-content: center;
+nav {
+  background-color: #f7f7f7;
+  border-bottom: 2px solid #000;
+  position: fixed;
+  width: 100%;
+  height: 135px;
 }
+div#ghost-nav {
+  background-color: blue;
+  height: 120px;
+}
+h1.logo {
+  display: inline;
+  float: left;
+  margin-left: 2em;
+  margin-top: .8em;
+  font-family: 'Lobster', cursive;
+  font-size: 2.5em;
+}
+input#message-input {
+  width: 50%;
+  height: 35px;
+  font-size: 1em;
+  padding: 0 1em;
+  margin-top: 2.5em;
+  margin-left: 2em;
+}
+button#clear-btn {
+  width: 100px;
+  height: 37px;
+  padding: 5px 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #000;
+  font-size: 1em;
+  margin-left: 2em;
+}
+button#clear-btn:hover {
+  background-color: #fff;
+}
+div#checkboxes {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 1.8em;
+}
+input#large-text, input#dark-theme {
+  margin-right: 10px;
+}
+input#large-text{
+  margin-left: 3em;
+}
+h3 {
+  margin-top: 35px;
+  margin-left: 20%;
+}
+div#message-output {
+  width: 65%;
+  height: auto;
+  min-height: 500px;
+  margin: .5em auto;
+  border: 2px solid black;
+}
+.dark-theme {
+  background-color: slategray;
+  color: white;
+}
+.large-text {
+  font-size: 2em;
+}
+div.eachMessage {
+  margin: 3em 3em;
+}
+button.removeMessage {
+  margin-left: 1em;
+  padding: 5px 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #000;
+  font-size: 1em;
+}
+button.removeMessage:hover {
+  background-color: #fff;
+}
+
+
+
+
+/*
 #message-input {
   margin: 1.5em;
   margin-right: 0em;
@@ -24,6 +108,10 @@
   padding: 5px 10px;
 }
 
+.disable {
+  cursor: not-allowed;
+  opacity: .6;
+}
 #clear-btn:hover {
   border: 1px solid black;
   background-color: slategray;
@@ -36,28 +124,8 @@
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
-}
+}*/
 
-.checkbox {
-  display: flex;
-}
 
-.logo {
-  font-family: 'Lobster', cursive;
-}
 
-.dark-theme {
-	background-color: slategray;
-	color: white;
-}
-
-.large-text {
-	font-size: 3em;
-}
-
-#message-output {
-  border: 2px solid black;
-  height: 500px;
-  width: 500px;
-}
 
