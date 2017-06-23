@@ -27,17 +27,22 @@ var chatChatChat = (function(oldChatChatChat) {
 
 		deleteBtn.addEventListener("click", function(){
 			outputArea.removeChild(addNewMsg)
-		})
 
-		clearBtn.addEventListener("click", function(){
-			if (outputArea.contains(addNewMsg)){
-				outputArea.removeChild(addNewMsg)
-			}else{
-				clearBtn.setAttribute("disabled", "disabled");
-			}
-		console.log("buttonworks");
-		})
+		}) 
+
+		// if (clearBtn.getAttribute("disabled")){
+		// 	clearBtn.setAttribute("disabled", false)
+		// }
 	}
+		// clearBtn.addEventListener("click", function(){
+		// 	if (outputArea.contains(addNewMsg)){
+		// 		outputArea.removeChild(addNewMsg)
+		// 	}else{
+		// 		clearBtn.setAttribute("disabled", "disabled");
+		// 	}
+		// console.log("buttonworks");
+	// 	})
+	// }
 
 	oldChatChatChat.messagesAddToDOM = function() {
 		allmessages = chatChatChat.getMessages();
@@ -57,18 +62,12 @@ var chatChatChat = (function(oldChatChatChat) {
 			deleteBtn.addEventListener("click", function(){
 				outputArea.removeChild(messageHolder)
 			})
-			clearBtn.addEventListener("click", function(){
-				if (outputArea.contains(messageHolder)){
-					outputArea.removeChild(messageHolder)
-					console.log("buttonworks");
-				}else{
-					clearBtn.setAttribute("disabled", "disabled");
-				}
-			
-			})
 		})
 	}
+
 
 	return oldChatChatChat;
 
 }(chatChatChat|| {}));
+
+
