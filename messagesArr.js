@@ -1,6 +1,5 @@
 var chatChatChat = (function(oldChatChatChat) {
-
-
+  
   oldChatChatChat.loadInitialMessages = function(callBack) {
     let myRequest = new XMLHttpRequest();
     myRequest.addEventListener("load", function(){
