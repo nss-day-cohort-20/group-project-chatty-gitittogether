@@ -27,22 +27,8 @@ var chatChatChat = (function(oldChatChatChat) {
 
 		deleteBtn.addEventListener("click", function(){
 			outputArea.removeChild(addNewMsg)
-
 		}) 
-
-		// if (clearBtn.getAttribute("disabled")){
-		// 	clearBtn.setAttribute("disabled", false)
-		// }
 	}
-		// clearBtn.addEventListener("click", function(){
-		// 	if (outputArea.contains(addNewMsg)){
-		// 		outputArea.removeChild(addNewMsg)
-		// 	}else{
-		// 		clearBtn.setAttribute("disabled", "disabled");
-		// 	}
-		// console.log("buttonworks");
-	// 	})
-	// }
 
 	oldChatChatChat.messagesAddToDOM = function() {
 		allmessages = chatChatChat.getMessages();
@@ -65,9 +51,6 @@ var chatChatChat = (function(oldChatChatChat) {
 		})
 	}
 
-
 	return oldChatChatChat;
 
 }(chatChatChat|| {}));
-
-

@@ -18,10 +18,8 @@ let messagesHub = function(messagesArr) {
 }
 
 clearBtn.addEventListener("click", function(){
-	if (outputMessageArea.firstChild){
-		outputMessageArea.innerHTML = "";
-		clearBtn.setAttribute("disabled", true);
-	}
+	outputMessageArea.innerHTML = "";
+	clearBtn.setAttribute("disabled", true);
 })
 
 function clearTextBox(event, inputText) {
@@ -35,6 +33,7 @@ userInput.addEventListener("keypress", function(event) {
     	let inputText = userInput.value;
     	chatChatChat.addNewMsgToArr(inputText);
     	clearTextBox(inputText);
+    	clearBtn.disabled = false;
 	}
 })
 	
