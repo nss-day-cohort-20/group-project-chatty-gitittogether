@@ -2,6 +2,7 @@ var darkTheme = document.getElementById("dark-theme");
 var largeText =  document.getElementById("large-text");
 let outputMessageArea = document.getElementById("message-output")
 let clearBtn = document.getElementById("clear-btn")
+let userInput = document.getElementById("message-input");
 
 
 darkTheme.addEventListener("click", function() {
@@ -18,7 +19,6 @@ let messagesHub = function(messagesArr) {
 	chatChatChat.messagesAddToDOM();
 }
 
-let userInput = document.getElementById("message-input");
 
 
 clearBtn.addEventListener("click", function(){
@@ -28,11 +28,17 @@ clearBtn.addEventListener("click", function(){
 				}
 })
 
+function clearTextBox(event, inputText) {
+  if (inputText !== "") {
+    userInput.value = "";
+  }
+};
 
 userInput.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
     	let inputText = userInput.value;
     	chatChatChat.addNewMsgToArr(inputText);
+    	clearTextBox(inputText);
 	}
 })
 	
