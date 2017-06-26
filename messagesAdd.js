@@ -12,7 +12,7 @@ var chatChatChat = (function(oldChatChatChat) {
 	}
 
 	oldChatChatChat.addNewMsgToArr = function(newMessageItem) {
-		allMessagesArr.push(newMessageItem)
+		allMessagesArr.push({newMessageItem})
 		console.log(allMessagesArr)
 		let addNewMsg = document.createElement("div");
 		addNewMsg.setAttribute("class", "eachMessage");
